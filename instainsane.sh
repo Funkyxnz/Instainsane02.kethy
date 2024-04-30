@@ -41,7 +41,7 @@ printf "\n"
 }
 
 
-function start() {
+function start() { 02.kethy
 read -p $'\e[1;92mUsername account: \e[0m' user
 checkaccount=$(curl -s https://www.instagram.com/$user/?__a=1 | grep -c "the page may have been removed")
 if [[ "$checkaccount" == 1 ]]; then
